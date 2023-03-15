@@ -20,7 +20,10 @@ const App = ()=> {
         color='#f11946'
         progress={progress} 
       />
+       
+      
         <Routes>
+       
           <Route  path="/" element={<News setProgress={setProgress} apiKey={apiKey} key="general" pageSize={pageSize} country="in" category="general"/>}/>
           <Route  path="/business" element={<News setProgress={setProgress} apiKey={apiKey} key="business" pageSize={pageSize} country="in" category="business"/>}/> 
           <Route  path="/entertainment" element={<News setProgress={setProgress} apiKey={apiKey} key="entertainment" pageSize={pageSize} country="in" category="entertainment"/>}/> 
@@ -31,6 +34,7 @@ const App = ()=> {
           <Route  path="/technology" element={<News setProgress={setProgress} apiKey={apiKey} key="technology" pageSize={pageSize} country="in" category="technology"/>}/> 
         
         </Routes>
+       
         </BrowserRouter>
       </div>
     )
